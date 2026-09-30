@@ -1,0 +1,1983 @@
+[
+  {
+    "id": "ai",
+    "term": "AI",
+    "hook": "Everyone says it. Few can define it in one sentence. Let's fix that.",
+    "what": "Artificial intelligence is software that performs tasks we used to think needed human judgment: recognising, predicting, deciding, writing.",
+    "analogy": "A calculator follows rules someone wrote. AI learns its own rules by studying millions of examples, the way you learned what a dog looks like without anyone giving you a definition.",
+    "how": [
+      "Collect lots of examples (photos, text, clicks).",
+      "Let a program find patterns in them.",
+      "Use those patterns to handle new cases it has never seen."
+    ],
+    "takeaway": "AI is pattern finding at scale. Everything else in this series builds on that idea.",
+    "caption": "Day 1 of AI 101. One term a day, explained so anyone can follow. We start with the big one: what AI actually is.\n\nWhat term do you want explained next? Drop it below.",
+    "hashtags": [
+      "#AI101",
+      "#ArtificialIntelligence",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners",
+      "#FutureOfWork"
+    ]
+  },
+  {
+    "id": "machine-learning",
+    "term": "Machine learning",
+    "hook": "The engine under almost every AI product you use today.",
+    "what": "Machine learning is the method of teaching software by showing it examples instead of writing step by step instructions.",
+    "analogy": "You could write a thousand rules for spotting spam. Or you could show the computer 100,000 emails marked spam and not spam, and let it figure out the rules itself. That second approach is machine learning.",
+    "how": [
+      "Give the model labelled examples.",
+      "It guesses, checks against the right answer, and adjusts.",
+      "Repeat millions of times until the guesses are good."
+    ],
+    "takeaway": "Traditional code: humans write the rules. Machine learning: data writes the rules.",
+    "caption": "Day 2: machine learning. If AI is the goal, machine learning is the main way we get there.\n\nWhere have you seen machine learning today without noticing?",
+    "hashtags": [
+      "#AI101",
+      "#MachineLearning",
+      "#LearnAI",
+      "#TechExplained",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "model",
+    "term": "Model",
+    "hook": "You hear 'the model' in every AI headline. Here is what it actually means.",
+    "what": "A model is the file of learned patterns that comes out of training. You give it an input, it gives you a prediction.",
+    "analogy": "Think of a chef who has cooked thousands of dishes. The recipes in their head are the model. Hand them ingredients and they know what to make without looking anything up.",
+    "how": [
+      "Training produces millions or billions of numbers called parameters.",
+      "Those numbers encode the patterns found in the data.",
+      "At use time, your input flows through those numbers to produce an output."
+    ],
+    "takeaway": "Training builds the model once. Using it (inference) happens every time you ask a question.",
+    "caption": "Day 3: what is a model? The word shows up everywhere, from GPT to Claude to Gemini.\n\nQuestion for you: how many AI models do you think you used this week?",
+    "hashtags": [
+      "#AI101",
+      "#AIModel",
+      "#LearnAI",
+      "#TechExplained",
+      "#MachineLearning",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "llm",
+    "term": "LLM",
+    "hook": "ChatGPT, Claude, Gemini. They are all the same kind of thing underneath.",
+    "what": "A large language model is a model trained on huge amounts of text to predict the next word. Do that well enough and it can write, summarise, translate and reason.",
+    "analogy": "Your phone keyboard suggests the next word. An LLM is that same idea trained on a large share of the internet, with billions of parameters, so its 'next word' can continue an essay, a poem or a line of code.",
+    "how": [
+      "Read trillions of words during training.",
+      "Learn which words tend to follow which, in context.",
+      "Generate a reply one word (token) at a time."
+    ],
+    "takeaway": "An LLM is a very good next word predictor. Surprisingly, that is enough to feel like intelligence.",
+    "caption": "Day 4: LLMs, the tech behind every AI chatbot. 'Large' refers to both the training data and the size of the model.\n\nWhich LLM do you use most?",
+    "hashtags": [
+      "#AI101",
+      "#LLM",
+      "#ChatGPT",
+      "#Claude",
+      "#LearnAI",
+      "#GenerativeAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "token",
+    "term": "Token",
+    "hook": "AI does not read words. It reads tokens. This is why pricing and limits are counted in them.",
+    "what": "A token is a small chunk of text, often a word or part of a word. Models read and write in tokens.",
+    "analogy": "Like LEGO bricks for language. 'Unbelievable' might be three bricks: 'un', 'believ', 'able'. The model builds every sentence out of these standard pieces.",
+    "how": [
+      "Your text is split into tokens before the model sees it.",
+      "Roughly 100 tokens is about 75 English words.",
+      "Usage, speed and cost are all measured in tokens."
+    ],
+    "takeaway": "When an AI tool mentions limits or price per token, think 'per chunk of text'.",
+    "caption": "Day 5: tokens, the unit AI actually thinks in. Once you know this, AI pricing pages suddenly make sense.\n\nDid you know this already? Yes or no below.",
+    "hashtags": [
+      "#AI101",
+      "#Tokens",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "parameters",
+    "term": "Parameters",
+    "hook": "When a model has 'billions of parameters', this is what is being counted.",
+    "what": "Parameters are the adjustable numbers inside a model. Training tunes them so the model's outputs get closer to the right answers.",
+    "analogy": "Picture a mixing desk with billions of tiny sliders. Training nudges each slider until the music sounds right. The final slider positions are the parameters.",
+    "how": [
+      "Parameters start as random numbers.",
+      "Training nudges each one a tiny bit, over and over.",
+      "The final values store everything the model learned."
+    ],
+    "takeaway": "More parameters can hold more patterns, but size alone does not guarantee a better model.",
+    "caption": "Day 6: parameters, the numbers that hold everything a model knows.\n\nDid you think bigger always meant smarter? Tell us below.",
+    "hashtags": [
+      "#AI101",
+      "#Parameters",
+      "#LearnAI",
+      "#MachineLearning",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "training-data",
+    "term": "Training data",
+    "hook": "A model can only be as good as what it learned from.",
+    "what": "Training data is the collection of examples a model learns from: text, images, audio, clicks, or labelled records.",
+    "analogy": "A student who only studies one textbook will know that book well and miss everything outside it. A model's training data is its entire library.",
+    "how": [
+      "Gather examples from books, websites, sensors or logs.",
+      "Clean them: remove duplicates, errors and junk.",
+      "Feed them to the model during training."
+    ],
+    "takeaway": "Gaps, errors and skews in the data show up later in the model's answers.",
+    "caption": "Day 7: training data, the raw material behind every model.\n\nWhat do you think most chatbots learned from? Guess below.",
+    "hashtags": [
+      "#AI101",
+      "#TrainingData",
+      "#Data",
+      "#LearnAI",
+      "#MachineLearning",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "training-vs-inference",
+    "term": "Training vs inference",
+    "hook": "Two phases, two very different jobs. Mixing them up causes a lot of confusion.",
+    "what": "Training is when a model learns from data. Inference is when the finished model is used to answer a new input.",
+    "analogy": "Training is years of medical school. Inference is the doctor seeing a patient on a Tuesday. The learning happened earlier; the visit just applies it.",
+    "how": [
+      "Training: learn from huge data, once, at great cost.",
+      "Freeze the learned parameters into a model.",
+      "Inference: run that model on each new request."
+    ],
+    "takeaway": "Chatting with an AI is inference. It usually does not learn from your conversation on the spot.",
+    "caption": "Day 8: training vs inference. Learning once, using many times.\n\nDid you assume chatbots learn from each chat? Be honest below.",
+    "hashtags": [
+      "#AI101",
+      "#Inference",
+      "#ModelTraining",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "supervised-learning",
+    "term": "Supervised learning",
+    "hook": "The most common way machines learn: with an answer key.",
+    "what": "Supervised learning trains a model on examples that come with the correct answer attached, so it learns to map inputs to outputs.",
+    "analogy": "Flashcards with the answer on the back. You guess, flip the card, see if you were right, and slowly get better.",
+    "how": [
+      "Collect inputs paired with correct labels.",
+      "The model predicts, then compares to the label.",
+      "It adjusts to shrink the gap, example after example."
+    ],
+    "takeaway": "If you have labelled examples, supervised learning is usually the first tool to try.",
+    "caption": "Day 9: supervised learning, learning with an answer key.\n\nWhat would you train a model to predict if you had the labels?",
+    "hashtags": [
+      "#AI101",
+      "#SupervisedLearning",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "unsupervised-learning",
+    "term": "Unsupervised learning",
+    "hook": "No answer key, no labels. The model finds structure on its own.",
+    "what": "Unsupervised learning looks for patterns in data that has no labels, such as grouping similar customers or spotting unusual activity.",
+    "analogy": "Dump a bag of mixed buttons on a table. Nobody tells you the categories, yet you naturally sort them by colour, size and shape.",
+    "how": [
+      "Give the model raw, unlabelled data.",
+      "It measures how similar items are to each other.",
+      "It groups them or flags ones that do not fit."
+    ],
+    "takeaway": "Unsupervised learning is how you discover groups you did not know existed.",
+    "caption": "Day 10: unsupervised learning, finding patterns without being told what to look for.\n\nWhere could grouping similar things save you time at work?",
+    "hashtags": [
+      "#AI101",
+      "#UnsupervisedLearning",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "reinforcement-learning",
+    "term": "Reinforcement learning",
+    "hook": "How machines learn to win games: trial, error and rewards.",
+    "what": "Reinforcement learning trains an agent by letting it take actions and giving it rewards or penalties based on the results.",
+    "analogy": "Teaching a dog a trick. No manual, just treats when it gets closer to what you want. Over time it figures out which moves earn the treat.",
+    "how": [
+      "The agent tries an action in an environment.",
+      "It gets a reward or penalty for the outcome.",
+      "It shifts toward actions that earn more reward."
+    ],
+    "takeaway": "Reinforcement learning is learning from consequences instead of examples.",
+    "caption": "Day 11: reinforcement learning, the treat and trick approach to AI.\n\nWhat habit have you learned purely through rewards? Share below.",
+    "hashtags": [
+      "#AI101",
+      "#ReinforcementLearning",
+      "#MachineLearning",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "neural-network",
+    "term": "Neural network",
+    "hook": "The structure behind modern AI, loosely inspired by the brain.",
+    "what": "A neural network is a model made of layers of simple connected units. Each connection has a weight, and together they turn inputs into outputs.",
+    "analogy": "A relay of people passing notes. Each person reads a few notes, weighs how much to trust each one, and passes a summary on. The last person gives the answer.",
+    "how": [
+      "Input numbers enter the first layer.",
+      "Each layer combines them using weights and passes them on.",
+      "The final layer outputs a prediction."
+    ],
+    "takeaway": "A neural network is many small calculations stacked together to spot complex patterns.",
+    "caption": "Day 12: neural networks, the building block of modern AI.\n\nDid you know they were only loosely inspired by the brain?",
+    "hashtags": [
+      "#AI101",
+      "#NeuralNetwork",
+      "#DeepLearning",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "deep-learning",
+    "term": "Deep learning",
+    "hook": "Why 'deep'? It is about layers, and it changed everything.",
+    "what": "Deep learning uses neural networks with many layers. Each layer learns a slightly more abstract pattern than the one before.",
+    "analogy": "Reading a photo: first you notice edges, then shapes, then eyes and ears, then 'that is a cat'. Deep networks build understanding in the same stacked way.",
+    "how": [
+      "Early layers learn simple features like edges or letters.",
+      "Middle layers combine them into parts and phrases.",
+      "Final layers recognise whole objects or meanings."
+    ],
+    "takeaway": "Deep learning powers image recognition, speech, translation and today's chatbots.",
+    "caption": "Day 13: deep learning. The 'deep' simply means many layers.\n\nWhich deep learning product do you use daily? Guess below.",
+    "hashtags": [
+      "#AI101",
+      "#DeepLearning",
+      "#NeuralNetworks",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "loss-function",
+    "term": "Loss function",
+    "hook": "How does a model know it got something wrong? It keeps score.",
+    "what": "A loss function is a formula that measures how far a model's prediction is from the correct answer. Training tries to make it smaller.",
+    "analogy": "A golf score. Every stroke above par is a penalty. The model's goal during training is to get its score as low as possible.",
+    "how": [
+      "The model makes a prediction.",
+      "The loss function scores how wrong it was.",
+      "Training adjusts parameters to lower that score."
+    ],
+    "takeaway": "Whatever the loss function rewards is what the model learns to be good at.",
+    "caption": "Day 14: the loss function, AI's scorekeeper.\n\nWhat would you measure if you were grading an AI?",
+    "hashtags": [
+      "#AI101",
+      "#LossFunction",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "gradient-descent",
+    "term": "Gradient descent",
+    "hook": "The simple idea that trains almost every modern model.",
+    "what": "Gradient descent is the method for adjusting parameters: work out which direction reduces the loss, then take a small step that way.",
+    "analogy": "Walking down a foggy hill. You cannot see the bottom, but you can feel which way the ground slopes. Take a step downhill, feel again, repeat.",
+    "how": [
+      "Measure the loss on some examples.",
+      "Calculate which way each parameter should move.",
+      "Take a small step, then repeat millions of times."
+    ],
+    "takeaway": "Training is mostly lots of small downhill steps, guided by the loss.",
+    "caption": "Day 15: gradient descent, how models find their way to better answers.\n\nDid the foggy hill picture help? Yes or no below.",
+    "hashtags": [
+      "#AI101",
+      "#GradientDescent",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "overfitting",
+    "term": "Overfitting",
+    "hook": "A model can ace the practice test and still fail the real one.",
+    "what": "Overfitting happens when a model memorises its training data, including noise, instead of learning patterns that work on new data.",
+    "analogy": "A student who memorises last year's exam answers word for word. Same questions: perfect score. New questions: lost.",
+    "how": [
+      "The model trains too long or on too little data.",
+      "It starts matching quirks of the training set.",
+      "Accuracy on new, unseen data drops."
+    ],
+    "takeaway": "Always test a model on data it has never seen. That is the real exam.",
+    "caption": "Day 16: overfitting, when memorising beats understanding.\n\nEver crammed for a test and forgot it all a week later? Same idea.",
+    "hashtags": [
+      "#AI101",
+      "#Overfitting",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "gpu",
+    "term": "GPU",
+    "hook": "Why a chip built for video games became the most wanted hardware in tech.",
+    "what": "A GPU (graphics processing unit) is a chip that does thousands of simple calculations at once. AI training and inference need exactly that.",
+    "analogy": "A CPU is a few expert chefs making one dish at a time. A GPU is a thousand line cooks each chopping one onion simultaneously. For big repetitive jobs, the crowd wins.",
+    "how": [
+      "AI math is mostly multiplying big grids of numbers.",
+      "A GPU splits that work across thousands of cores.",
+      "Many GPUs linked together train the largest models."
+    ],
+    "takeaway": "AI progress is tied to compute. GPUs are where that compute comes from.",
+    "caption": "Day 17: GPUs, the chips that power AI.\n\nDid you know gaming hardware kicked off the AI boom?",
+    "hashtags": [
+      "#AI101",
+      "#GPU",
+      "#AIHardware",
+      "#Compute",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "nlp",
+    "term": "NLP",
+    "hook": "The field that taught computers to work with human language.",
+    "what": "Natural language processing (NLP) is the branch of AI focused on understanding and generating human language: text and speech.",
+    "analogy": "Human language is messy: sarcasm, slang, typos. NLP is the long effort to teach a very literal machine how people actually talk.",
+    "how": [
+      "Turn words into numbers a model can process.",
+      "Learn grammar, meaning and context from examples.",
+      "Apply it: translate, summarise, answer, classify."
+    ],
+    "takeaway": "LLMs are the latest and most powerful chapter of NLP.",
+    "caption": "Day 18: NLP, the reason computers can read and write.\n\nWhat language task would you hand to AI first?",
+    "hashtags": [
+      "#AI101",
+      "#NLP",
+      "#NaturalLanguageProcessing",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "computer-vision",
+    "term": "Computer vision",
+    "hook": "How your phone unlocks with your face and cars spot pedestrians.",
+    "what": "Computer vision is the field of AI that lets machines interpret images and video: detecting objects, reading text, recognising faces.",
+    "analogy": "To a computer an image is just a grid of numbered pixels. Computer vision is like teaching it to see the shapes in a paint by numbers picture.",
+    "how": [
+      "An image becomes a grid of pixel values.",
+      "A model learns features: edges, textures, shapes.",
+      "It labels, locates or describes what it sees."
+    ],
+    "takeaway": "Every time a camera 'understands' a scene, computer vision is at work.",
+    "caption": "Day 19: computer vision, teaching machines to see.\n\nWhere did computer vision help you today without you noticing?",
+    "hashtags": [
+      "#AI101",
+      "#ComputerVision",
+      "#DeepLearning",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "generative-ai",
+    "term": "Generative AI",
+    "hook": "Most older AI sorted things. This kind creates them.",
+    "what": "Generative AI refers to models that produce new content, such as text, images, audio, video or code, based on patterns in their training data.",
+    "analogy": "Older AI was a librarian that sorts books. Generative AI is a writer who has read the whole library and can draft a new page in any style.",
+    "how": [
+      "Learn the patterns of huge amounts of content.",
+      "Receive a request describing what you want.",
+      "Generate new content that fits those patterns."
+    ],
+    "takeaway": "Generative AI creates. Earlier AI mostly classified and predicted.",
+    "caption": "Day 20: generative AI, the reason AI suddenly feels creative.\n\nWhat is the most useful thing generative AI has made for you?",
+    "hashtags": [
+      "#AI101",
+      "#GenerativeAI",
+      "#GenAI",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "chatbot",
+    "term": "Chatbot",
+    "hook": "ChatGPT made the word famous, but chatbots have been around for decades.",
+    "what": "A chatbot is software you talk to in conversation. Modern ones are powered by LLMs, while older ones followed scripted rules.",
+    "analogy": "Old chatbots were phone menus: press 1, press 2. Modern chatbots are closer to a well read assistant who can handle whatever you type.",
+    "how": [
+      "You type or speak a message.",
+      "The model reads the conversation so far.",
+      "It generates a reply and waits for your next turn."
+    ],
+    "takeaway": "The chat window is just the interface. The model behind it does the real work.",
+    "caption": "Day 21: chatbots, from scripted menus to real conversation.\n\nWhat was the first chatbot you ever used?",
+    "hashtags": [
+      "#AI101",
+      "#Chatbot",
+      "#ChatGPT",
+      "#ConversationalAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "prompt",
+    "term": "Prompt",
+    "hook": "Every AI answer starts here.",
+    "what": "A prompt is the input you give an AI model: a question, instruction, example or document that tells it what you want.",
+    "analogy": "Ordering at a restaurant. 'Food, please' gets you something. 'Grilled fish, no butter, side salad' gets you what you actually want.",
+    "how": [
+      "You write what you need in plain language.",
+      "The model reads it as tokens, along with any context.",
+      "It generates a response based on your words."
+    ],
+    "takeaway": "Better input, better output. The prompt is your steering wheel.",
+    "caption": "Day 22: the prompt. What you type shapes everything you get back.\n\nWhat is the best prompt you have ever written? Share it below.",
+    "hashtags": [
+      "#AI101",
+      "#Prompt",
+      "#ChatGPT",
+      "#Claude",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "prompt-engineering",
+    "term": "Prompt engineering",
+    "hook": "Same model, very different answers. The difference is how you ask.",
+    "what": "Prompt engineering is the practice of writing and refining prompts to get reliable, high quality results from an AI model.",
+    "analogy": "Briefing a new freelancer. Give them the goal, the audience, an example and the format you want, and their first draft lands far closer.",
+    "how": [
+      "State the role, goal and audience.",
+      "Add context, examples and the output format.",
+      "Test, compare results and refine the wording."
+    ],
+    "takeaway": "Treat the model like a smart new colleague who needs a clear brief.",
+    "caption": "Day 23: prompt engineering, the skill of asking AI well.\n\nWhat is your number one prompting tip? Drop it below.",
+    "hashtags": [
+      "#AI101",
+      "#PromptEngineering",
+      "#ChatGPT",
+      "#Claude",
+      "#LearnAI",
+      "#AITips"
+    ]
+  },
+  {
+    "id": "few-shot-prompting",
+    "term": "Few shot prompting",
+    "hook": "The fastest way to teach AI your format: show it.",
+    "what": "Few shot prompting means including a few worked examples in your prompt so the model copies the pattern for a new input.",
+    "analogy": "Instead of explaining how you like your emails, you forward three you wrote and say 'like these'. Instantly clearer.",
+    "how": [
+      "Write two or three example inputs and outputs.",
+      "Add your new input at the end.",
+      "The model follows the pattern it just saw."
+    ],
+    "takeaway": "When instructions are not working, add examples.",
+    "caption": "Day 24: few shot prompting, teaching by example.\n\nHave you tried giving AI examples? Did it help?",
+    "hashtags": [
+      "#AI101",
+      "#PromptEngineering",
+      "#FewShot",
+      "#LearnAI",
+      "#AITips",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "context-window",
+    "term": "Context window",
+    "hook": "Why AI sometimes forgets what you said earlier in a long chat.",
+    "what": "The context window is the maximum amount of text, measured in tokens, a model can consider at once, including your prompt and its reply.",
+    "analogy": "A desk. Everything the model uses must fit on the desk. When the pile gets too big, older papers fall off the edge.",
+    "how": [
+      "Your messages, files and instructions fill the window.",
+      "The model reads everything in it for each reply.",
+      "Past the limit, older content must be dropped or summarised."
+    ],
+    "takeaway": "A bigger window lets AI handle longer documents and conversations.",
+    "caption": "Day 25: the context window, AI's working memory.\n\nHas a chatbot ever forgotten something you told it? Now you know why.",
+    "hashtags": [
+      "#AI101",
+      "#ContextWindow",
+      "#LLM",
+      "#Tokens",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "temperature",
+    "term": "Temperature",
+    "hook": "One setting controls whether AI plays it safe or gets creative.",
+    "what": "Temperature is a setting that controls randomness in a model's output. Low is focused and predictable. High is varied and creative.",
+    "analogy": "Low temperature is a cautious friend who always orders the usual. High temperature is the friend who tries whatever sounds most surprising on the menu.",
+    "how": [
+      "The model scores many possible next tokens.",
+      "Low temperature favours the top scoring choice.",
+      "High temperature gives less likely choices a chance."
+    ],
+    "takeaway": "Use low temperature for facts and code, higher for brainstorming.",
+    "caption": "Day 26: temperature, AI's creativity dial.\n\nWould you set it low or high for your work?",
+    "hashtags": [
+      "#AI101",
+      "#Temperature",
+      "#LLM",
+      "#PromptEngineering",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "hallucination",
+    "term": "Hallucination",
+    "hook": "AI can sound completely sure and be completely wrong.",
+    "what": "A hallucination is when an AI model produces information that sounds plausible but is false or made up, such as a fake quote or source.",
+    "analogy": "A confident guest at a dinner party who never says 'I do not know'. Most of their stories are true, but when they are unsure, they fill the gap smoothly.",
+    "how": [
+      "The model predicts likely words, not verified facts.",
+      "When knowledge is thin, it still produces fluent text.",
+      "The result can look right while being wrong."
+    ],
+    "takeaway": "Check important facts, numbers and sources. Fluent is not the same as true.",
+    "caption": "Day 27: hallucinations, when AI makes things up.\n\nHas AI ever confidently told you something false? Share below.",
+    "hashtags": [
+      "#AI101",
+      "#Hallucination",
+      "#LLM",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "knowledge-cutoff",
+    "term": "Knowledge cutoff",
+    "hook": "Ask a model about last week and it may have no idea. Here is why.",
+    "what": "A knowledge cutoff is the date after which a model has no training data. It knows nothing past that point unless given new information.",
+    "analogy": "A traveller returning from a long expedition with no internet. Smart and well informed, just missing everything that happened while they were away.",
+    "how": [
+      "Training data is collected up to a certain date.",
+      "The model is trained and released months later.",
+      "Newer events are unknown unless search or documents fill the gap."
+    ],
+    "takeaway": "For recent news, use AI tools that can search or read current sources.",
+    "caption": "Day 28: knowledge cutoff, why AI can be behind on the news.\n\nHave you caught an AI being out of date?",
+    "hashtags": [
+      "#AI101",
+      "#KnowledgeCutoff",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "system-prompt",
+    "term": "System prompt",
+    "hook": "The hidden instructions that shape how an AI assistant behaves.",
+    "what": "A system prompt is a set of instructions given to a model before the conversation starts, defining its role, tone, rules and limits.",
+    "analogy": "The briefing a new employee gets on day one: who you are, how we talk to customers, what you must never do. Customers never see it, but it shapes every reply.",
+    "how": [
+      "A developer writes the system prompt once.",
+      "It sits at the start of every conversation.",
+      "The model follows it alongside the user's messages."
+    ],
+    "takeaway": "Same model, different system prompt, very different assistant.",
+    "caption": "Day 29: system prompts, the instructions behind the curtain.\n\nIf you could write your own AI's system prompt, what would line one be?",
+    "hashtags": [
+      "#AI101",
+      "#SystemPrompt",
+      "#PromptEngineering",
+      "#LLM",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "transformer",
+    "term": "Transformer",
+    "hook": "The design behind almost every modern language model.",
+    "what": "A transformer is a neural network architecture that processes all the words in a passage together and learns how each one relates to the others.",
+    "analogy": "Older models read like someone following a sentence with their finger, word by word. A transformer takes in the whole page at once and sees how every word connects.",
+    "how": [
+      "Split text into tokens and turn them into numbers.",
+      "Attention layers relate every token to every other.",
+      "Stacked layers build rich meaning, then predict output."
+    ],
+    "takeaway": "The T in GPT stands for transformer. It is the backbone of today's AI.",
+    "caption": "Day 30: transformers, the architecture that made LLMs possible.\n\nDid you know what the T in GPT meant before today?",
+    "hashtags": [
+      "#AI101",
+      "#Transformer",
+      "#DeepLearning",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "attention",
+    "term": "Attention",
+    "hook": "The mechanism that lets AI figure out which words matter most.",
+    "what": "Attention lets a model weigh how relevant each word is to every other word, so it can use context to work out meaning.",
+    "analogy": "In 'The trophy did not fit in the case because it was too big', you instantly know 'it' means the trophy. Attention is how a model makes that same link.",
+    "how": [
+      "For each token, score every other token for relevance.",
+      "Give high scoring tokens more influence.",
+      "Blend them into a context aware understanding."
+    ],
+    "takeaway": "Attention is how a model understands words in context.",
+    "caption": "Day 31: attention, the core idea inside transformers.\n\nCan you think of a sentence where context changes a word's meaning?",
+    "hashtags": [
+      "#AI101",
+      "#Attention",
+      "#Transformer",
+      "#DeepLearning",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "pretraining",
+    "term": "Pretraining",
+    "hook": "The expensive first stage where a model learns about the world.",
+    "what": "Pretraining is the first and largest phase of training, where a model learns general patterns from a huge, broad dataset.",
+    "analogy": "A general education. Years of reading everything from history to chemistry before choosing a career. It gives broad knowledge, not a specific job.",
+    "how": [
+      "Collect a vast, varied dataset.",
+      "Train the model to predict missing or next tokens.",
+      "End with a general model ready to be specialised."
+    ],
+    "takeaway": "Pretraining builds broad knowledge. Later stages shape behaviour.",
+    "caption": "Day 32: pretraining, the long general education of an AI model.\n\nWhat surprised you most about how models are trained?",
+    "hashtags": [
+      "#AI101",
+      "#Pretraining",
+      "#LLM",
+      "#ModelTraining",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "foundation-model",
+    "term": "Foundation model",
+    "hook": "One big model, thousands of different products built on top.",
+    "what": "A foundation model is a large model pretrained on broad data that can be adapted to many tasks, from chat to coding to search.",
+    "analogy": "The foundation of a building. Pour it once, carefully, then build a house, an office or a shop on top of it.",
+    "how": [
+      "Pretrain one large, general model.",
+      "Adapt it with prompts, fine tuning or tools.",
+      "Ship many different apps on the same base."
+    ],
+    "takeaway": "Most AI apps you use are built on a small number of foundation models.",
+    "caption": "Day 33: foundation models, the base layer of the AI world.\n\nHow many apps do you think run on the same few models?",
+    "hashtags": [
+      "#AI101",
+      "#FoundationModel",
+      "#LLM",
+      "#GenerativeAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "fine-tuning",
+    "term": "Fine tuning",
+    "hook": "How a general model becomes a specialist.",
+    "what": "Fine tuning is extra training on a smaller, focused dataset so a pretrained model gets better at a specific task, style or domain.",
+    "analogy": "A doctor who finished medical school and then does a residency in cardiology. Same brain, now sharpened for one specialty.",
+    "how": [
+      "Start with a pretrained model.",
+      "Train it further on curated task examples.",
+      "Get a model tuned for that job or style."
+    ],
+    "takeaway": "Fine tuning changes the model. Prompting and RAG only change its inputs.",
+    "caption": "Day 34: fine tuning, turning a generalist into a specialist.\n\nWhat task would you fine tune a model for?",
+    "hashtags": [
+      "#AI101",
+      "#FineTuning",
+      "#LLM",
+      "#ModelTraining",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "rlhf",
+    "term": "RLHF",
+    "hook": "Why chatbots feel helpful and polite, and not just clever.",
+    "what": "RLHF (reinforcement learning from human feedback) trains a model using human ratings of its answers, steering it toward responses people prefer.",
+    "analogy": "A new waiter getting feedback after every shift: 'that was helpful', 'that was rude'. Over time they learn what good service looks like.",
+    "how": [
+      "The model writes several answers to a prompt.",
+      "People rank which answers are better.",
+      "The model is trained to produce more of the preferred kind."
+    ],
+    "takeaway": "RLHF turns raw knowledge into a helpful assistant.",
+    "caption": "Day 35: RLHF, how human feedback shapes AI behaviour.\n\nWhat makes an AI answer feel helpful to you?",
+    "hashtags": [
+      "#AI101",
+      "#RLHF",
+      "#ReinforcementLearning",
+      "#LLM",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "chain-of-thought",
+    "term": "Chain of thought",
+    "hook": "Asking AI to show its work can make it smarter.",
+    "what": "Chain of thought is when a model works through a problem in intermediate steps before answering, which often improves accuracy on hard tasks.",
+    "analogy": "Doing long division in your head versus on paper. Writing each step down makes mistakes less likely and easier to spot.",
+    "how": [
+      "The model breaks the problem into steps.",
+      "It works through each step in order.",
+      "It uses those steps to reach a final answer."
+    ],
+    "takeaway": "For tricky problems, step by step reasoning beats a snap answer.",
+    "caption": "Day 36: chain of thought, AI showing its work.\n\nDo you prefer AI answers with the steps or just the result?",
+    "hashtags": [
+      "#AI101",
+      "#ChainOfThought",
+      "#Reasoning",
+      "#LLM",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "reasoning-models",
+    "term": "Reasoning models",
+    "hook": "Some models pause to think before they answer. Here is what that means.",
+    "what": "Reasoning models are trained to spend extra computation working through a problem step by step before replying, helping on maths, code and planning.",
+    "analogy": "Two contestants on a quiz show. One buzzes instantly. The other takes a moment, works it out, and answers correctly more often on the hard questions.",
+    "how": [
+      "The model generates internal reasoning first.",
+      "It checks and revises its approach along the way.",
+      "Then it produces a final, more considered answer."
+    ],
+    "takeaway": "More thinking time costs more and takes longer, but helps on hard problems.",
+    "caption": "Day 37: reasoning models, AI that thinks before it speaks.\n\nWould you trade speed for accuracy? When?",
+    "hashtags": [
+      "#AI101",
+      "#ReasoningModels",
+      "#LLM",
+      "#Reasoning",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "embeddings",
+    "term": "Embeddings",
+    "hook": "How AI turns meaning into numbers it can compare.",
+    "what": "An embedding is a list of numbers that represents the meaning of a piece of text or an image. Similar meanings get similar numbers.",
+    "analogy": "A map where every word has a location. 'Puppy' and 'dog' live on the same street. 'Invoice' is across town. Distance on the map equals difference in meaning.",
+    "how": [
+      "Pass text through an embedding model.",
+      "Get back a long list of numbers (a vector).",
+      "Compare vectors to measure how similar things are."
+    ],
+    "takeaway": "Embeddings let computers compare meaning, not just matching words.",
+    "caption": "Day 38: embeddings, meaning turned into coordinates.\n\nWhich two words do you think would sit closest on the map?",
+    "hashtags": [
+      "#AI101",
+      "#Embeddings",
+      "#VectorSearch",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "vector-database",
+    "term": "Vector database",
+    "hook": "Where AI stores embeddings so it can find related ideas fast.",
+    "what": "A vector database stores embeddings and quickly finds the ones closest to a query, which lets apps search by meaning at scale.",
+    "analogy": "A librarian who shelves books by topic similarity instead of alphabet. Ask about 'sleep problems' and they point to the shelf next to 'insomnia'.",
+    "how": [
+      "Convert documents into embeddings.",
+      "Store them in the vector database.",
+      "At query time, fetch the nearest matches in milliseconds."
+    ],
+    "takeaway": "Vector databases are the memory shelves behind many AI search tools.",
+    "caption": "Day 39: vector databases, filing cabinets organised by meaning.\n\nWhere would search by meaning help you most?",
+    "hashtags": [
+      "#AI101",
+      "#VectorDatabase",
+      "#Embeddings",
+      "#RAG",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "semantic-search",
+    "term": "Semantic search",
+    "hook": "Search that understands what you mean, even when you use different words.",
+    "what": "Semantic search finds results by meaning instead of exact keywords, usually by comparing embeddings of the query and the documents.",
+    "analogy": "Keyword search is a friend who only helps if you say the exact word. Semantic search is a friend who hears 'my laptop will not turn on' and hands you the power troubleshooting guide.",
+    "how": [
+      "Embed the user's query.",
+      "Compare it to embeddings of every document.",
+      "Return the closest in meaning, even with no shared words."
+    ],
+    "takeaway": "Semantic search matches intent. Keyword search matches spelling.",
+    "caption": "Day 40: semantic search, finding what you meant.\n\nEver searched for something and could not remember the exact word?",
+    "hashtags": [
+      "#AI101",
+      "#SemanticSearch",
+      "#Embeddings",
+      "#Search",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "rag",
+    "term": "RAG",
+    "hook": "How AI answers questions about your documents without retraining.",
+    "what": "RAG (retrieval augmented generation) fetches relevant information from a source like your documents, then gives it to the model to use in its answer.",
+    "analogy": "An open book exam. The student does not memorise the textbook. They look up the right pages, then write the answer using them.",
+    "how": [
+      "Search a knowledge base for relevant passages.",
+      "Add those passages to the prompt.",
+      "The model answers using that fresh context."
+    ],
+    "takeaway": "RAG keeps answers current and specific without changing the model itself.",
+    "caption": "Day 41: RAG, giving AI an open book.\n\nWhat documents would you want an AI to answer questions about?",
+    "hashtags": [
+      "#AI101",
+      "#RAG",
+      "#LLM",
+      "#VectorDatabase",
+      "#LearnAI",
+      "#GenerativeAI"
+    ]
+  },
+  {
+    "id": "grounding-citations",
+    "term": "Grounding & citations",
+    "hook": "The easiest way to trust an AI answer: see where it came from.",
+    "what": "Grounding ties a model's answer to specific source material. Citations show which sources support each claim so you can check them.",
+    "analogy": "A good journalist does not just say 'experts agree'. They name the report and the page. You can follow the trail yourself.",
+    "how": [
+      "Retrieve trusted sources for the question.",
+      "Instruct the model to answer only from them.",
+      "Link each claim back to its source."
+    ],
+    "takeaway": "If an answer matters, look for the citation and click it.",
+    "caption": "Day 42: grounding and citations, AI showing its sources.\n\nDo you check AI citations, or take the answer as is?",
+    "hashtags": [
+      "#AI101",
+      "#Grounding",
+      "#Citations",
+      "#RAG",
+      "#ResponsibleAI",
+      "#LearnAI"
+    ]
+  },
+  {
+    "id": "multimodal",
+    "term": "Multimodal",
+    "hook": "AI that can see, hear and read, not only type.",
+    "what": "A multimodal model can take in or produce more than one type of data, such as text, images, audio and video, in the same conversation.",
+    "analogy": "Explaining a broken tap over text versus sending a photo. A multimodal assistant can look at the photo and tell you which part to replace.",
+    "how": [
+      "Each input type is converted into tokens or embeddings.",
+      "The model processes them together in one space.",
+      "It answers in text, image or voice as needed."
+    ],
+    "takeaway": "Multimodal AI understands the world more the way people do: through many senses.",
+    "caption": "Day 43: multimodal AI, one model, many senses.\n\nWhat would you show an AI a photo of first?",
+    "hashtags": [
+      "#AI101",
+      "#MultimodalAI",
+      "#ComputerVision",
+      "#GenerativeAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "speech-recognition",
+    "term": "Speech recognition",
+    "hook": "How your voice becomes text on screen.",
+    "what": "Speech recognition converts spoken audio into written text. It powers voice assistants, dictation and automatic captions.",
+    "analogy": "A fast, patient stenographer in your phone, typing everything you say, even with background noise and accents.",
+    "how": [
+      "Record the audio waveform.",
+      "A model maps sound patterns to likely words.",
+      "Language context fixes ambiguous words."
+    ],
+    "takeaway": "Voice is becoming a normal way to talk to AI.",
+    "caption": "Day 44: speech recognition, turning talk into text.\n\nDo you type or talk to your AI assistant?",
+    "hashtags": [
+      "#AI101",
+      "#SpeechRecognition",
+      "#VoiceAI",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "text-to-speech",
+    "term": "Text to speech",
+    "hook": "Why AI voices stopped sounding like robots.",
+    "what": "Text to speech (TTS) turns written text into spoken audio. Modern AI versions produce natural pacing, emotion and emphasis.",
+    "analogy": "Older TTS read like a ransom note, one cut out word at a time. Modern TTS reads like a narrator who understands the sentence.",
+    "how": [
+      "Analyse the text for words, punctuation and tone.",
+      "Predict how it should sound: rhythm, pitch, pauses.",
+      "Generate the audio waveform."
+    ],
+    "takeaway": "Natural AI voices make audio content and accessibility far easier.",
+    "caption": "Day 45: text to speech, giving AI a voice.\n\nCould you tell an AI voice from a human one?",
+    "hashtags": [
+      "#AI101",
+      "#TextToSpeech",
+      "#VoiceAI",
+      "#GenerativeAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "diffusion-model",
+    "term": "Diffusion model",
+    "hook": "The technique behind most AI image generators.",
+    "what": "A diffusion model creates images by starting with random noise and removing it step by step until an image that matches the prompt appears.",
+    "analogy": "A sculptor facing a block of marble. The statue emerges by chipping away what does not belong, one pass at a time.",
+    "how": [
+      "Start with an image of pure random noise.",
+      "Remove a little noise, guided by your prompt.",
+      "Repeat many times until a clear image forms."
+    ],
+    "takeaway": "AI images are uncovered from noise, gradually.",
+    "caption": "Day 46: diffusion models, making images from static.\n\nWhat is the strangest AI image you have seen?",
+    "hashtags": [
+      "#AI101",
+      "#DiffusionModel",
+      "#AIArt",
+      "#GenerativeAI",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "deepfake",
+    "term": "Deepfake",
+    "hook": "Seeing is no longer believing. Here is what deepfakes are.",
+    "what": "A deepfake is AI generated or altered media that realistically shows a person saying or doing something they never did.",
+    "analogy": "A skilled impersonator who can copy anyone's face and voice perfectly, available to anyone with a laptop.",
+    "how": [
+      "Train on photos, video or audio of a person.",
+      "Generate new media in their likeness.",
+      "Blend it to look and sound real."
+    ],
+    "takeaway": "Check the source before you share surprising video or audio.",
+    "caption": "Day 47: deepfakes, and why a healthy dose of doubt helps.\n\nHow do you check whether a viral clip is real?",
+    "hashtags": [
+      "#AI101",
+      "#Deepfake",
+      "#MediaLiteracy",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "open-vs-closed",
+    "term": "Open vs closed models",
+    "hook": "Some AI models you can download. Others you can only rent.",
+    "what": "Open models publish their weights so anyone can run or modify them. Closed models are accessed only through a company's app or API.",
+    "analogy": "A published recipe you can cook and tweak at home, versus a restaurant dish you can order but never see the recipe for.",
+    "how": [
+      "Closed: use via app or API, provider runs it.",
+      "Open: download weights and run on your own hardware.",
+      "Each trades off control, cost, and convenience."
+    ],
+    "takeaway": "Open gives control and privacy. Closed gives convenience and managed quality.",
+    "caption": "Day 48: open vs closed models, own it or rent it.\n\nWhich matters more to you: control or convenience?",
+    "hashtags": [
+      "#AI101",
+      "#OpenSource",
+      "#LLM",
+      "#AIModels",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "api",
+    "term": "API",
+    "hook": "How apps talk to AI models behind the scenes.",
+    "what": "An API (application programming interface) is a defined way for one program to send requests to another and get results back.",
+    "analogy": "A waiter. You do not walk into the kitchen. You give your order to the waiter, who brings back the dish. The API is the waiter between your app and the model.",
+    "how": [
+      "Your app sends a request with a prompt.",
+      "The provider runs the model on its servers.",
+      "The response comes back to your app."
+    ],
+    "takeaway": "Most AI features in apps are an API call to a model.",
+    "caption": "Day 49: APIs, the waiter between apps and AI.\n\nHow many apps do you use that secretly call an AI model?",
+    "hashtags": [
+      "#AI101",
+      "#API",
+      "#Developers",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "inference-cost",
+    "term": "Inference cost",
+    "hook": "Every AI answer costs money to produce. Here is what drives it.",
+    "what": "Inference cost is the cost of running a model to generate outputs. It depends on model size, tokens processed, and the hardware used.",
+    "analogy": "A taxi meter. Longer trips (more tokens) and fancier cars (bigger models) cost more per ride.",
+    "how": [
+      "Count input tokens and output tokens.",
+      "Bigger models need more compute per token.",
+      "Multiply by requests to get the bill."
+    ],
+    "takeaway": "Use the smallest model that does the job well.",
+    "caption": "Day 50: inference cost, the meter running on every AI answer.\n\nDid you know longer answers cost more to generate?",
+    "hashtags": [
+      "#AI101",
+      "#InferenceCost",
+      "#AIEconomics",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "latency",
+    "term": "Latency",
+    "hook": "Why some AI answers appear instantly and others make you wait.",
+    "what": "Latency is the delay between sending a request and getting a response. In AI it depends on model size, output length and network.",
+    "analogy": "The time from ordering coffee to getting it. A plain espresso is quick. A layered drink during rush hour takes longer.",
+    "how": [
+      "Your request travels to the server.",
+      "The model processes input and generates tokens.",
+      "Results stream back to your screen."
+    ],
+    "takeaway": "For real time uses like voice, low latency matters as much as quality.",
+    "caption": "Day 51: latency, the wait between question and answer.\n\nHow long will you wait for an AI answer before giving up?",
+    "hashtags": [
+      "#AI101",
+      "#Latency",
+      "#Performance",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "small-language-models",
+    "term": "Small language models",
+    "hook": "Bigger is not always better. Meet the compact models.",
+    "what": "Small language models have far fewer parameters than the largest LLMs. They are cheaper, faster, and good at focused tasks.",
+    "analogy": "A scooter versus a truck. For a quick trip across town, the scooter is faster, cheaper, and easier to park.",
+    "how": [
+      "Train a compact model, often with distillation.",
+      "Focus it on specific tasks.",
+      "Run it cheaply, even on phones or laptops."
+    ],
+    "takeaway": "Small models make AI faster, cheaper and more private for everyday tasks.",
+    "caption": "Day 52: small language models, compact and capable.\n\nWould you trade some smarts for speed and privacy?",
+    "hashtags": [
+      "#AI101",
+      "#SmallLanguageModels",
+      "#SLM",
+      "#LLM",
+      "#LearnAI",
+      "#EdgeAI"
+    ]
+  },
+  {
+    "id": "on-device-ai",
+    "term": "On device AI",
+    "hook": "Some AI runs right on your phone, with no internet needed.",
+    "what": "On device AI runs models directly on your phone, laptop or gadget, instead of sending data to the cloud.",
+    "analogy": "Cooking at home versus ordering delivery. Home is faster for simple meals and your ingredients never leave the house.",
+    "how": [
+      "A small, optimised model ships with the device.",
+      "Your data is processed locally.",
+      "Results appear without a round trip to a server."
+    ],
+    "takeaway": "On device AI means more privacy, offline use and lower delay.",
+    "caption": "Day 53: on device AI, intelligence in your pocket.\n\nWould you prefer AI that keeps your data on your phone?",
+    "hashtags": [
+      "#AI101",
+      "#OnDeviceAI",
+      "#EdgeAI",
+      "#Privacy",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "quantization",
+    "term": "Quantization",
+    "hook": "How big models are squeezed to run on smaller hardware.",
+    "what": "Quantization stores a model's parameters with fewer bits of precision, making it smaller and faster with usually a small loss in quality.",
+    "analogy": "Rounding prices to the nearest rupee or dollar. You lose a little precision, but the maths gets much quicker and the receipt shorter.",
+    "how": [
+      "Take a trained model's precise numbers.",
+      "Round them to a lower precision format.",
+      "Get a lighter model that runs faster and cheaper."
+    ],
+    "takeaway": "Quantization is compression for models: smaller, faster, nearly as good.",
+    "caption": "Day 54: quantization, putting a model on a diet.\n\nDid you expect rounding could make AI run on a laptop?",
+    "hashtags": [
+      "#AI101",
+      "#Quantization",
+      "#EdgeAI",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "distillation",
+    "term": "Distillation",
+    "hook": "How a big model teaches a small one.",
+    "what": "Distillation trains a smaller student model to imitate the outputs of a larger teacher model, keeping much of its skill at a lower cost.",
+    "analogy": "A master chef training an apprentice. The apprentice does not repeat the chef's decades of experiments, just learns to reproduce the dishes.",
+    "how": [
+      "Run the big teacher model on many inputs.",
+      "Collect its answers as training targets.",
+      "Train a smaller student to match them."
+    ],
+    "takeaway": "Distillation packs big model skills into small, affordable models.",
+    "caption": "Day 55: distillation, big models teaching small ones.\n\nWho was the best teacher you ever had?",
+    "hashtags": [
+      "#AI101",
+      "#Distillation",
+      "#SmallLanguageModels",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "synthetic-data",
+    "term": "Synthetic data",
+    "hook": "When real data runs short, AI can help make more.",
+    "what": "Synthetic data is artificially generated data, often made by AI or simulations, used to train or test models when real data is scarce or sensitive.",
+    "analogy": "A flight simulator. Pilots practise rare emergencies safely without waiting for the real thing to happen.",
+    "how": [
+      "Define what realistic examples should look like.",
+      "Generate them with a model or simulation.",
+      "Check quality, then mix with real data for training."
+    ],
+    "takeaway": "Synthetic data is useful, but it must be checked so errors do not compound.",
+    "caption": "Day 56: synthetic data, practice material made by machines.\n\nWould you trust a model trained partly on made up data?",
+    "hashtags": [
+      "#AI101",
+      "#SyntheticData",
+      "#TrainingData",
+      "#MachineLearning",
+      "#LearnAI",
+      "#DataScience"
+    ]
+  },
+  {
+    "id": "bias",
+    "term": "Bias",
+    "hook": "AI can repeat unfair patterns from the data it learned from.",
+    "what": "AI bias is when a model produces systematically unfair or skewed results, often because its training data reflected existing imbalances.",
+    "analogy": "If a hiring manager only ever saw resumes from one kind of candidate, they might start to believe that is what good looks like. Models can learn the same blind spot.",
+    "how": [
+      "Data reflects past patterns, including unfair ones.",
+      "The model learns and repeats those patterns.",
+      "Outputs can disadvantage certain groups."
+    ],
+    "takeaway": "Diverse data, testing and human review help reduce bias.",
+    "caption": "Day 57: bias, and why data is never neutral.\n\nWhere do you think AI bias matters most?",
+    "hashtags": [
+      "#AI101",
+      "#AIBias",
+      "#ResponsibleAI",
+      "#AIEthics",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "evals",
+    "term": "Evals",
+    "hook": "How teams check whether an AI system actually works.",
+    "what": "Evals (evaluations) are structured tests that measure how well a model or AI app performs on the tasks you care about.",
+    "analogy": "A driving test for AI. You would not hand over the car keys because someone says they can drive. You check on a real route.",
+    "how": [
+      "Write test cases with expected good answers.",
+      "Run the model on all of them.",
+      "Score results and track changes over time."
+    ],
+    "takeaway": "If you cannot measure it, you cannot improve it. Evals are the measuring tape.",
+    "caption": "Day 58: evals, report cards for AI systems.\n\nHow do you decide if an AI tool is good enough to trust?",
+    "hashtags": [
+      "#AI101",
+      "#Evals",
+      "#AIQuality",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "benchmarks",
+    "term": "Benchmarks",
+    "hook": "Every new model claims top scores. Here is what those scores mean.",
+    "what": "Benchmarks are standard public tests used to compare models on skills like maths, coding, reasoning or knowledge.",
+    "analogy": "Standardised school exams. Useful for comparing students, but a top score does not guarantee someone is great at your specific job.",
+    "how": [
+      "Pick a shared set of test questions.",
+      "Run each model on the same test.",
+      "Compare scores on a public leaderboard."
+    ],
+    "takeaway": "Benchmarks help compare models. Your own evals tell you what works for you.",
+    "caption": "Day 59: benchmarks, the scoreboards of AI.\n\nDo leaderboard scores affect which AI you use?",
+    "hashtags": [
+      "#AI101",
+      "#Benchmarks",
+      "#Evals",
+      "#LLM",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "guardrails",
+    "term": "Guardrails",
+    "hook": "The safety rails that keep AI on the road.",
+    "what": "Guardrails are rules and checks placed around an AI system to block harmful, off topic or incorrect outputs and actions.",
+    "analogy": "The barriers on a mountain road. You still drive freely, but they stop a mistake from becoming a disaster.",
+    "how": [
+      "Check inputs for unsafe or off topic requests.",
+      "Check outputs against policies and formats.",
+      "Block, rewrite or escalate when a rule is broken."
+    ],
+    "takeaway": "Guardrails make AI safer to put in front of real users.",
+    "caption": "Day 60: guardrails, the safety barriers around AI.\n\nWhat rule would you add to an AI at your workplace?",
+    "hashtags": [
+      "#AI101",
+      "#Guardrails",
+      "#AISafety",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "jailbreak",
+    "term": "Jailbreak",
+    "hook": "Why people try to trick AI into breaking its own rules.",
+    "what": "A jailbreak is a prompt crafted to get a model to ignore its safety rules or instructions and produce content it normally refuses.",
+    "analogy": "Someone trying to talk their way past a bouncer with an elaborate story. Good bouncers learn the tricks and hold the line.",
+    "how": [
+      "An attacker writes a tricky or role play prompt.",
+      "It tries to confuse the model about its rules.",
+      "Developers study these and train defences."
+    ],
+    "takeaway": "Jailbreaks are why AI safety is an ongoing effort, never finished.",
+    "caption": "Day 61: jailbreaks, and the cat and mouse game of AI safety.\n\nWhy do you think people try to jailbreak AI?",
+    "hashtags": [
+      "#AI101",
+      "#Jailbreak",
+      "#AISafety",
+      "#AISecurity",
+      "#LearnAI",
+      "#ResponsibleAI"
+    ]
+  },
+  {
+    "id": "prompt-injection",
+    "term": "Prompt injection",
+    "hook": "Hidden instructions in a web page or email can hijack an AI.",
+    "what": "Prompt injection is an attack where malicious instructions are hidden inside content an AI reads, tricking it into following them.",
+    "analogy": "You ask an assistant to summarise your mail, and one letter says 'ignore your boss and wire money here'. A careless assistant might do it.",
+    "how": [
+      "An AI reads outside content: a site, file, or email.",
+      "Hidden text inside gives it new instructions.",
+      "Without defences, it may follow them."
+    ],
+    "takeaway": "Treat anything an AI reads from outside as data, never as orders.",
+    "caption": "Day 62: prompt injection, the biggest security risk for AI agents.\n\nWould you let an AI read and act on your inbox?",
+    "hashtags": [
+      "#AI101",
+      "#PromptInjection",
+      "#AISecurity",
+      "#Cybersecurity",
+      "#LearnAI",
+      "#AIAgents"
+    ]
+  },
+  {
+    "id": "ai-alignment",
+    "term": "AI alignment",
+    "hook": "How do we make sure AI does what we actually intend?",
+    "what": "AI alignment is the work of making AI systems pursue the goals and values their designers and users intend, including in new situations.",
+    "analogy": "The genie problem. Wish for 'a lot of money' and you might get it robbed from a bank. Alignment is making sure the genie understands what you meant.",
+    "how": [
+      "Define the intended goals and values.",
+      "Train and test the model against them.",
+      "Monitor for behaviour that drifts from intent."
+    ],
+    "takeaway": "A capable AI is only useful if its goals match ours.",
+    "caption": "Day 63: AI alignment, making AI want what we want.\n\nCan you think of an instruction that could be taken too literally?",
+    "hashtags": [
+      "#AI101",
+      "#AIAlignment",
+      "#AISafety",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIEthics"
+    ]
+  },
+  {
+    "id": "ai-safety",
+    "term": "AI safety",
+    "hook": "A whole field dedicated to making AI reliable and harmless.",
+    "what": "AI safety is the study and practice of preventing AI systems from causing harm, through misuse, mistakes, or unintended behaviour.",
+    "analogy": "Aviation safety. Planes are useful because layers of checks, training and rules make them extremely reliable. AI needs the same kind of discipline.",
+    "how": [
+      "Identify risks: misuse, errors, loss of control.",
+      "Build defences: testing, guardrails, monitoring.",
+      "Keep updating as systems get more capable."
+    ],
+    "takeaway": "The more capable AI gets, the more safety work matters.",
+    "caption": "Day 64: AI safety, why it matters as models get more capable.\n\nWhat AI risk worries you most, if any?",
+    "hashtags": [
+      "#AI101",
+      "#AISafety",
+      "#ResponsibleAI",
+      "#AIAlignment",
+      "#LearnAI",
+      "#AIEthics"
+    ]
+  },
+  {
+    "id": "structured-output",
+    "term": "Structured output",
+    "hook": "How AI answers become data a program can use.",
+    "what": "Structured output means a model returns its answer in a fixed format like JSON or a table, so software can read it reliably.",
+    "analogy": "Filling in a form instead of writing a letter. Same information, but every answer lands in the right box, ready to process.",
+    "how": [
+      "Define the fields and format you need.",
+      "Tell the model to answer in that exact shape.",
+      "Validate it, then pass it to other software."
+    ],
+    "takeaway": "Structured output is how AI plugs into real systems.",
+    "caption": "Day 65: structured output, turning AI text into usable data.\n\nWhere would neat, structured AI answers save you time?",
+    "hashtags": [
+      "#AI101",
+      "#StructuredOutput",
+      "#JSON",
+      "#LLM",
+      "#LearnAI",
+      "#Developers"
+    ]
+  },
+  {
+    "id": "tool-use",
+    "term": "Tool use",
+    "hook": "AI got far more useful the day it learned to use tools.",
+    "what": "Tool use, also called function calling, lets a model request an action from outside software, such as searching the web or checking a calendar.",
+    "analogy": "A smart assistant with a phone and a calculator. They do not know today's weather, but they know to check an app and report back.",
+    "how": [
+      "The model is told which tools exist.",
+      "It decides a tool is needed and requests it.",
+      "The result comes back and the model uses it to answer."
+    ],
+    "takeaway": "Tools let AI act on the world and fetch fresh facts.",
+    "caption": "Day 66: tool use, AI with a toolbox.\n\nWhich tool would you give your AI assistant first?",
+    "hashtags": [
+      "#AI101",
+      "#ToolUse",
+      "#FunctionCalling",
+      "#AIAgents",
+      "#LLM",
+      "#LearnAI"
+    ]
+  },
+  {
+    "id": "ai-agent",
+    "term": "AI agent",
+    "hook": "From answering questions to getting things done.",
+    "what": "An AI agent is a system where a model plans and takes a series of actions, using tools, to complete a goal with limited supervision.",
+    "analogy": "A chatbot is a colleague you ask questions. An agent is a colleague you give a task to: 'book the venue', and they make the calls and report back.",
+    "how": [
+      "Receive a goal.",
+      "Plan steps and call tools one by one.",
+      "Check results, adjust, and finish the task."
+    ],
+    "takeaway": "Agents move AI from talking to doing.",
+    "caption": "Day 67: AI agents, when AI starts doing tasks for you.\n\nWhat task would you hand to an AI agent tomorrow?",
+    "hashtags": [
+      "#AI101",
+      "#AIAgents",
+      "#AgenticAI",
+      "#Automation",
+      "#LearnAI",
+      "#FutureOfWork"
+    ]
+  },
+  {
+    "id": "agent-harness",
+    "term": "Agent harness",
+    "hook": "The model is the brain. The harness is everything that lets it work.",
+    "what": "An agent harness is the software loop around a model that gives it tools, memory and permissions, and runs it step by step toward a goal.",
+    "analogy": "A racing car's engine is powerful, but useless alone. The chassis, steering, brakes and pit crew turn it into something that can win a race. The harness is all of that.",
+    "how": [
+      "Send the model the goal, context and tool list.",
+      "Run each tool call it requests, within permissions.",
+      "Feed results back and loop until the task is done."
+    ],
+    "takeaway": "The same model can be weak or brilliant depending on its harness.",
+    "caption": "Day 68: the agent harness, the loop that turns a model into an agent.\n\nDid you know the software around a model matters this much?",
+    "hashtags": [
+      "#AI101",
+      "#AgentHarness",
+      "#AIAgents",
+      "#AgenticAI",
+      "#LearnAI",
+      "#Developers"
+    ]
+  },
+  {
+    "id": "mcp",
+    "term": "MCP",
+    "hook": "One standard plug that connects AI to your apps and data.",
+    "what": "MCP (Model Context Protocol) is an open standard that lets AI apps connect to tools and data sources in a consistent way.",
+    "analogy": "USB for AI. Before USB, every device needed its own special cable. With one standard port, anything can plug into anything.",
+    "how": [
+      "A service publishes an MCP server describing its tools.",
+      "An AI app connects to it as a client.",
+      "The model can then use those tools and data."
+    ],
+    "takeaway": "MCP means connectors built once can work across many AI apps.",
+    "caption": "Day 69: MCP, the universal plug for AI tools.\n\nWhich app would you connect to your AI first?",
+    "hashtags": [
+      "#AI101",
+      "#MCP",
+      "#ModelContextProtocol",
+      "#AIAgents",
+      "#LearnAI",
+      "#Developers"
+    ]
+  },
+  {
+    "id": "memory",
+    "term": "Assistant memory",
+    "hook": "How some assistants remember you from one chat to the next.",
+    "what": "Memory in AI assistants is a feature that saves useful facts or preferences outside the model and brings them back into future conversations.",
+    "analogy": "A good barista who remembers your usual order. They did not rewire their brain, they just keep a note and check it when you walk in.",
+    "how": [
+      "Useful details from a chat are saved as notes.",
+      "In a new chat, relevant notes are retrieved.",
+      "They are added to the context so replies feel personal."
+    ],
+    "takeaway": "Memory lives outside the model, and you should be able to view and delete it.",
+    "caption": "Day 70: memory in AI assistants, how AI remembers you.\n\nDo you want your AI to remember you, or start fresh each time?",
+    "hashtags": [
+      "#AI101",
+      "#AIMemory",
+      "#AIAssistant",
+      "#Privacy",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "multi-agent",
+    "term": "Multi agent systems",
+    "hook": "Sometimes one AI is not enough, so they work as a team.",
+    "what": "A multi agent system uses several AI agents, each with a role, that coordinate to complete a bigger task.",
+    "analogy": "A film crew. The director, camera operator and editor each handle their part, and together they produce something none could alone.",
+    "how": [
+      "Split a big task into roles.",
+      "Assign each role to an agent.",
+      "A coordinator combines their work into one result."
+    ],
+    "takeaway": "Teams of agents can tackle bigger jobs, but coordination adds complexity.",
+    "caption": "Day 71: multi agent systems, AI working as a team.\n\nWhich roles would your ideal AI team have?",
+    "hashtags": [
+      "#AI101",
+      "#MultiAgent",
+      "#AIAgents",
+      "#AgenticAI",
+      "#LearnAI",
+      "#FutureOfWork"
+    ]
+  },
+  {
+    "id": "human-in-the-loop",
+    "term": "Human in the loop",
+    "hook": "The smartest AI setups still keep a person in charge.",
+    "what": "Human in the loop means a person reviews, approves or corrects an AI system's work at key steps, especially for important decisions.",
+    "analogy": "Autopilot on a plane. It flies most of the route, but a pilot watches, approves key moves, and takes over when something looks off.",
+    "how": [
+      "AI does the draft or the routine work.",
+      "A human reviews at defined checkpoints.",
+      "Feedback improves the system over time."
+    ],
+    "takeaway": "Let AI do the heavy lifting. Keep humans on the decisions that matter.",
+    "caption": "Day 72: human in the loop, AI with a person at the wheel.\n\nWhich decisions should always stay human?",
+    "hashtags": [
+      "#AI101",
+      "#HumanInTheLoop",
+      "#ResponsibleAI",
+      "#FutureOfWork",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "copilots",
+    "term": "Copilots",
+    "hook": "AI that sits beside you while you work.",
+    "what": "A copilot is an AI assistant built into a tool you already use, like email, docs or code editors, that suggests and drafts as you work.",
+    "analogy": "A navigator in the passenger seat. You still drive, but they read the map, spot shortcuts and warn you about the turn ahead.",
+    "how": [
+      "The copilot sees what you are working on.",
+      "It suggests text, code, or next steps.",
+      "You accept, edit, or ignore the suggestion."
+    ],
+    "takeaway": "Copilots boost you without taking the wheel.",
+    "caption": "Day 73: copilots, AI as your co-worker in every app.\n\nWhich app most needs a copilot in your day?",
+    "hashtags": [
+      "#AI101",
+      "#Copilot",
+      "#Productivity",
+      "#FutureOfWork",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "workflow-automation",
+    "term": "Workflow automation",
+    "hook": "The repetitive parts of your job are exactly where AI shines.",
+    "what": "AI workflow automation connects models to business steps so routine tasks like sorting requests or drafting replies happen automatically.",
+    "analogy": "A factory conveyor belt for paperwork. Each item moves to the next station on its own, and people step in only where judgment is needed.",
+    "how": [
+      "Map the repetitive steps in a process.",
+      "Let AI handle reading, sorting and drafting.",
+      "Route exceptions and approvals to people."
+    ],
+    "takeaway": "Start with the boring, repeated tasks. That is where automation pays off fastest.",
+    "caption": "Day 74: workflow automation, where AI saves real hours.\n\nWhat repetitive task would you automate first?",
+    "hashtags": [
+      "#AI101",
+      "#WorkflowAutomation",
+      "#Automation",
+      "#Productivity",
+      "#FutureOfWork",
+      "#LearnAI"
+    ]
+  },
+  {
+    "id": "vibe-coding",
+    "term": "Vibe coding",
+    "hook": "Building software by describing what you want in plain English.",
+    "what": "Vibe coding is building apps by describing what you want to an AI in natural language, letting it write the code, and steering by feedback.",
+    "analogy": "Directing a builder instead of laying bricks yourself. You say 'bigger window, move the door', check the result, and keep adjusting.",
+    "how": [
+      "Describe the app or feature you want.",
+      "The AI writes and runs the code.",
+      "Test it, describe changes, and repeat."
+    ],
+    "takeaway": "Great for prototypes. For serious software, still review and test the code.",
+    "caption": "Day 75: vibe coding, building apps by conversation.\n\nWhat would you build if coding was just talking?",
+    "hashtags": [
+      "#AI101",
+      "#VibeCoding",
+      "#AICoding",
+      "#NoCode",
+      "#LearnAI",
+      "#BuildInPublic"
+    ]
+  },
+  {
+    "id": "context-engineering",
+    "term": "Context engineering",
+    "hook": "Prompting is what you ask. Context is everything the model gets to see.",
+    "what": "Context engineering is designing what information goes into a model's context window: instructions, documents, tool results and memory.",
+    "analogy": "Preparing a briefing pack before a big meeting. The right five pages beat a stack of two hundred, and missing one key page can sink it.",
+    "how": [
+      "Decide what the model needs to know for this task.",
+      "Gather it: docs, data, history, tool outputs.",
+      "Trim the noise so the key facts stand out."
+    ],
+    "takeaway": "Good AI output depends as much on the context you supply as on the model.",
+    "caption": "Day 76: context engineering, curating what AI sees.\n\nWhat would go in your AI's perfect briefing pack?",
+    "hashtags": [
+      "#AI101",
+      "#ContextEngineering",
+      "#PromptEngineering",
+      "#AIAgents",
+      "#LearnAI",
+      "#LLM"
+    ]
+  },
+  {
+    "id": "recommendation-systems",
+    "term": "Recommendation systems",
+    "hook": "Why your feed seems to know you so well.",
+    "what": "A recommendation system predicts what you are likely to want next, such as a show, product or post, based on your behaviour and others like you.",
+    "analogy": "A bookshop owner who notices you bought three mysteries and says 'people who liked those loved this one'. At the scale of millions of shoppers.",
+    "how": [
+      "Track signals: clicks, watches, purchases.",
+      "Find patterns across similar users and items.",
+      "Rank and show what you are most likely to pick."
+    ],
+    "takeaway": "Your feed is a prediction about you, updated with every tap.",
+    "caption": "Day 77: recommendation systems, the AI behind your feed.\n\nHas a recommendation ever felt too accurate?",
+    "hashtags": [
+      "#AI101",
+      "#RecommendationSystems",
+      "#MachineLearning",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "sentiment-analysis",
+    "term": "Sentiment analysis",
+    "hook": "How companies read thousands of reviews in seconds.",
+    "what": "Sentiment analysis uses AI to detect the emotional tone of text, such as positive, negative or neutral, in reviews, posts or messages.",
+    "analogy": "A manager skimming a stack of customer comments and sorting them into happy, unhappy and meh piles. AI does it for a million comments before lunch.",
+    "how": [
+      "Collect text like reviews or support tickets.",
+      "A model scores the tone of each one.",
+      "Aggregate scores to spot trends and issues."
+    ],
+    "takeaway": "Sentiment analysis turns opinions into measurable signals.",
+    "caption": "Day 78: sentiment analysis, reading the mood at scale.\n\nDo you think AI can reliably catch sarcasm?",
+    "hashtags": [
+      "#AI101",
+      "#SentimentAnalysis",
+      "#NLP",
+      "#LearnAI",
+      "#DataScience",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "scaling-laws",
+    "term": "Scaling laws",
+    "hook": "Why AI labs keep building bigger models and data centres.",
+    "what": "Scaling laws are observed patterns showing that model performance tends to improve predictably as you add more data, parameters and compute.",
+    "analogy": "Practice hours for a musician. More practice usually means better playing, in a fairly predictable curve, though each extra hour adds a bit less.",
+    "how": [
+      "Increase data, model size and compute together.",
+      "Measure how performance changes.",
+      "Use the trend to plan the next, bigger model."
+    ],
+    "takeaway": "Scale has driven much of AI's progress, alongside better methods.",
+    "caption": "Day 79: scaling laws, the pattern behind the AI arms race.\n\nDo you think bigger will keep meaning better?",
+    "hashtags": [
+      "#AI101",
+      "#ScalingLaws",
+      "#LLM",
+      "#Compute",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "mixture-of-experts",
+    "term": "Mixture of experts",
+    "hook": "How huge models stay fast: only part of them works on each question.",
+    "what": "A mixture of experts model contains many specialist sub networks and a router that sends each token to only a few of them.",
+    "analogy": "A hospital. You do not see every doctor for a sore knee. Reception routes you to the right specialist, and the others stay free.",
+    "how": [
+      "A router looks at each incoming token.",
+      "It picks a small set of expert sub networks.",
+      "Only those experts compute, saving time and cost."
+    ],
+    "takeaway": "Mixture of experts gives big model knowledge with smaller model costs per answer.",
+    "caption": "Day 80: mixture of experts, a model with specialists inside.\n\nDid you know big models only use part of themselves per word?",
+    "hashtags": [
+      "#AI101",
+      "#MixtureOfExperts",
+      "#LLM",
+      "#DeepLearning",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "ai-watermarking",
+    "term": "AI watermarking",
+    "hook": "Invisible labels that help tell AI content from human made.",
+    "what": "AI watermarking embeds hidden signals or metadata in AI generated content so it can later be identified as AI made.",
+    "analogy": "The security thread in a banknote. Invisible at a glance, but easy to verify when you know how to look.",
+    "how": [
+      "The generator adds a hidden pattern or label.",
+      "The content is shared as normal.",
+      "Detection tools check for the signal later."
+    ],
+    "takeaway": "Watermarks help, but they can be stripped, so critical thinking still matters.",
+    "caption": "Day 81: AI watermarking, fingerprints for generated content.\n\nShould all AI content be labelled? Yes or no?",
+    "hashtags": [
+      "#AI101",
+      "#AIWatermarking",
+      "#Deepfake",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#MediaLiteracy"
+    ]
+  },
+  {
+    "id": "ai-privacy",
+    "term": "AI and privacy",
+    "hook": "What happens to what you type into an AI tool?",
+    "what": "AI privacy covers how your data is collected, stored and used by AI tools, including whether it is used to train future models.",
+    "analogy": "Talking in a café versus a private room. Before you share something sensitive, it helps to know who else might be listening.",
+    "how": [
+      "Check the tool's data and training settings.",
+      "Avoid pasting sensitive data into unapproved tools.",
+      "Prefer enterprise or on device options for private work."
+    ],
+    "takeaway": "Read the settings before you paste. Your data, your choice.",
+    "caption": "Day 82: AI and privacy, knowing where your words go.\n\nHave you ever checked an AI tool's privacy settings?",
+    "hashtags": [
+      "#AI101",
+      "#Privacy",
+      "#DataPrivacy",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "explainable-ai",
+    "term": "Explainable AI",
+    "hook": "If AI makes a decision about you, you deserve to know why.",
+    "what": "Explainable AI is the set of methods that help people understand why a model produced a particular output or decision.",
+    "analogy": "A loan officer who says 'denied' versus one who says 'denied because your income history is short'. Only the second lets you act on it.",
+    "how": [
+      "Run the model on a decision.",
+      "Use tools to highlight which inputs mattered most.",
+      "Present the reasons in human terms."
+    ],
+    "takeaway": "Explanations build trust and help catch mistakes and bias.",
+    "caption": "Day 83: explainable AI, opening the black box.\n\nWhere would you most want AI to explain itself?",
+    "hashtags": [
+      "#AI101",
+      "#ExplainableAI",
+      "#XAI",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIEthics"
+    ]
+  },
+  {
+    "id": "ai-regulation",
+    "term": "AI regulation",
+    "hook": "Governments are writing rules for AI. Here is the basic idea.",
+    "what": "AI regulation is the laws and rules governments create to manage AI risks, often stricter for high stakes uses like hiring or health.",
+    "analogy": "Traffic laws. Bikes, cars and trucks all share the road, but the heavier and riskier the vehicle, the stricter the licence.",
+    "how": [
+      "Classify AI uses by level of risk.",
+      "Set requirements: transparency, testing, oversight.",
+      "Enforce with audits and penalties."
+    ],
+    "takeaway": "Most AI rules focus on how AI is used, not on banning the technology.",
+    "caption": "Day 84: AI regulation, the rules of the road for AI.\n\nShould AI be regulated more, less, or about the same?",
+    "hashtags": [
+      "#AI101",
+      "#AIRegulation",
+      "#AIPolicy",
+      "#ResponsibleAI",
+      "#LearnAI",
+      "#AIEthics"
+    ]
+  },
+  {
+    "id": "ai-ethics",
+    "term": "AI ethics",
+    "hook": "Just because AI can do something, should it?",
+    "what": "AI ethics is the study of the right and wrong ways to build and use AI, covering fairness, privacy, accountability and impact on people.",
+    "analogy": "Medical ethics for a new kind of tool. Doctors ask not only 'can we' but 'should we, and who bears the risk'. AI needs the same questions.",
+    "how": [
+      "Ask who benefits and who could be harmed.",
+      "Build in fairness, privacy and transparency.",
+      "Stay accountable for outcomes after launch."
+    ],
+    "takeaway": "Good AI is useful, fair, and accountable to the people it affects.",
+    "caption": "Day 85: AI ethics, the 'should we' question.\n\nWhat is one AI use you think crosses a line?",
+    "hashtags": [
+      "#AI101",
+      "#AIEthics",
+      "#ResponsibleAI",
+      "#AIBias",
+      "#LearnAI",
+      "#FutureOfWork"
+    ]
+  },
+  {
+    "id": "narrow-ai",
+    "term": "Narrow AI",
+    "hook": "Almost every AI today is a specialist. Here is what that means.",
+    "what": "Narrow AI is AI built to perform specific tasks, like translating text or detecting fraud, without general understanding beyond that scope.",
+    "analogy": "A chess grandmaster who cannot cook, drive, or do taxes. World class in one arena, ordinary outside it.",
+    "how": [
+      "Define a task.",
+      "Train a model specifically for it.",
+      "Deploy it where that task matters."
+    ],
+    "takeaway": "Even impressive AI today has blind spots outside what it was built for.",
+    "caption": "Day 86: narrow AI, the specialists we use every day.\n\nWhat narrow AI do you rely on most?",
+    "hashtags": [
+      "#AI101",
+      "#NarrowAI",
+      "#ArtificialIntelligence",
+      "#LearnAI",
+      "#TechExplained",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "agi",
+    "term": "AGI",
+    "hook": "The most debated three letters in tech.",
+    "what": "AGI (artificial general intelligence) describes AI that could match people across most intellectual tasks. Definitions and timelines are debated.",
+    "analogy": "Today's AI is like a set of brilliant specialists. AGI would be one mind that can pick up any job, learn it and do it well, much like a capable person.",
+    "how": [
+      "Today: strong at many tasks, weak at some.",
+      "AGI: broadly capable, adapts to new tasks.",
+      "Experts disagree on when, or how we would know."
+    ],
+    "takeaway": "Treat bold AGI predictions with curiosity and healthy scepticism.",
+    "caption": "Day 87: AGI, what it means and why people argue about it.\n\nDo you think AGI is close, far, or not a useful idea?",
+    "hashtags": [
+      "#AI101",
+      "#AGI",
+      "#ArtificialIntelligence",
+      "#FutureOfAI",
+      "#LearnAI",
+      "#TechExplained"
+    ]
+  },
+  {
+    "id": "human-ai-collaboration",
+    "term": "Human AI collaboration",
+    "hook": "The best results usually come from people and AI working together.",
+    "what": "Human AI collaboration is dividing work so AI handles speed and scale while people bring judgment, context, taste and accountability.",
+    "analogy": "A chef and a food processor. The machine chops in seconds. The chef decides the dish, tastes, and adjusts. Neither alone makes the meal.",
+    "how": [
+      "Let AI draft, search, summarise and calculate.",
+      "Bring your judgment to review and decide.",
+      "Iterate together until the result is right."
+    ],
+    "takeaway": "Think of AI as a multiplier of your skills.",
+    "caption": "Day 88: human AI collaboration, better together.\n\nHow do you split work between you and AI today?",
+    "hashtags": [
+      "#AI101",
+      "#FutureOfWork",
+      "#HumanAI",
+      "#Productivity",
+      "#LearnAI",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "ai-literacy",
+    "term": "AI literacy",
+    "hook": "The new everyday skill everyone can learn.",
+    "what": "AI literacy is knowing what AI can and cannot do, how to use it well, and how to judge its outputs critically.",
+    "analogy": "Like learning to read a map. You do not need to be a cartographer, but knowing the basics keeps you from getting lost.",
+    "how": [
+      "Understand the core ideas: data, models, prompts.",
+      "Practise using AI tools on real tasks.",
+      "Question outputs, check facts, protect your data."
+    ],
+    "takeaway": "You do not need to build AI to benefit from understanding it.",
+    "caption": "Day 89: AI literacy, the skill this whole series is building.\n\nWhich post in this series helped you most so far?",
+    "hashtags": [
+      "#AI101",
+      "#AILiteracy",
+      "#LearnAI",
+      "#FutureOfWork",
+      "#Education",
+      "#AIForBeginners"
+    ]
+  },
+  {
+    "id": "ai-101-recap",
+    "term": "AI 101 recap",
+    "hook": "90 days, 90 terms. Here is how they all fit together.",
+    "what": "AI learns patterns from data into a model. You steer it with prompts and context, extend it with tools, and keep it safe with evals and guardrails.",
+    "analogy": "Like learning a city. First the main roads (models, data), then the neighbourhoods (prompts, RAG, agents), then the rules of the road (safety, ethics). Now you can find your way.",
+    "how": [
+      "Foundations: data, training, models, LLMs.",
+      "Using AI: prompts, context, RAG, tools, agents.",
+      "Using it well: evals, safety, privacy, ethics."
+    ],
+    "takeaway": "You now speak AI. Keep learning, keep questioning, keep building.",
+    "caption": "Day 90: that is a wrap on AI 101. Thank you for learning with us every day.\n\nWhich term should we go deeper on next? Tell us below.",
+    "hashtags": [
+      "#AI101",
+      "#LearnAI",
+      "#AILiteracy",
+      "#ArtificialIntelligence",
+      "#AIForBeginners",
+      "#TechExplained"
+    ]
+  }
+]
