@@ -1,0 +1,57 @@
+name: Daily AI 101 post
+
+on:
+  schedule:
+    - cron: "30 2 * * *"   # 8:00 AM IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    env:
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_API_HOST: graph.facebook.com
+      IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install fonts and dependencies
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y fonts-dejavu-core
+          pip install -r requirements.txt
+
+      - name: Render today's carousel
+        run: python post.py
+
+      - name: Push images so Instagram can fetch them
+        run: |
+          git config user.name "ai101-bot"
+          git config user.email "ai101-bot@users.noreply.github.com"
+          git add images pending.json
+          git commit -m "Render $(date -u +%F)" || echo "nothing to commit"
+          git push
+
+      - name: Wait for raw URLs to go live
+        run: sleep 20
+
+      - name: Publish to Instagram
+        run: python post.py --publish
+
+      - name: Save history
+        if: always()
+        run: |
+          git add -A history.json pending.json || true
+          git commit -m "Posted $(date -u +%F)" || echo "nothing to commit"
+          git push
