@@ -136,5 +136,11 @@
     "term": "Prompt engineering",
     "media_id": "18141053626652348",
     "posted_at": "2026-11-10T10:18:41Z"
+  },
+  {
+    "id": "few-shot-prompting",
+    "term": "Few shot prompting",
+    "media_id": "17955961194302276",
+    "posted_at": "2026-11-11T09:48:32Z"
   }
 ]
