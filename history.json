@@ -148,5 +148,11 @@
     "term": "Context window",
     "media_id": "18115172039151227",
     "posted_at": "2026-11-12T10:11:26Z"
+  },
+  {
+    "id": "temperature",
+    "term": "Temperature",
+    "media_id": "18043951157641321",
+    "posted_at": "2026-11-13T09:55:38Z"
   }
 ]
