@@ -1,0 +1,12 @@
+{
+  "id": "hallucination",
+  "term": "Hallucination",
+  "files": [
+    "images/hallucination_1.jpg",
+    "images/hallucination_2.jpg",
+    "images/hallucination_3.jpg",
+    "images/hallucination_4.jpg",
+    "images/hallucination_5.jpg"
+  ],
+  "caption": "Day 27: hallucinations, when AI makes things up.\n\nHas AI ever confidently told you something false? Share below.\n\n#AI101 #Hallucination #LLM #ResponsibleAI #LearnAI #AIForBeginners"
+}
