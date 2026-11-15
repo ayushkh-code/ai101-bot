@@ -160,5 +160,11 @@
     "term": "Hallucination",
     "media_id": "18099609488450247",
     "posted_at": "2026-11-14T09:20:03Z"
+  },
+  {
+    "id": "knowledge-cutoff",
+    "term": "Knowledge cutoff",
+    "media_id": "18114545201128661",
+    "posted_at": "2026-11-15T09:49:38Z"
   }
 ]
