@@ -1,0 +1,12 @@
+{
+  "id": "system-prompt",
+  "term": "System prompt",
+  "files": [
+    "images/system-prompt_1.jpg",
+    "images/system-prompt_2.jpg",
+    "images/system-prompt_3.jpg",
+    "images/system-prompt_4.jpg",
+    "images/system-prompt_5.jpg"
+  ],
+  "caption": "Day 29: system prompts, the instructions behind the curtain.\n\nIf you could write your own AI's system prompt, what would line one be?\n\n#AI101 #SystemPrompt #PromptEngineering #LLM #LearnAI #AIForBeginners"
+}
