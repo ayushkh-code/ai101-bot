@@ -166,5 +166,11 @@
     "term": "Knowledge cutoff",
     "media_id": "18114545201128661",
     "posted_at": "2026-11-15T09:49:38Z"
+  },
+  {
+    "id": "system-prompt",
+    "term": "System prompt",
+    "media_id": "18146886700579855",
+    "posted_at": "2026-11-16T10:07:12Z"
   }
 ]
