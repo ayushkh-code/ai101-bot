@@ -1,0 +1,12 @@
+{
+  "id": "transformer",
+  "term": "Transformer",
+  "files": [
+    "images/transformer_1.jpg",
+    "images/transformer_2.jpg",
+    "images/transformer_3.jpg",
+    "images/transformer_4.jpg",
+    "images/transformer_5.jpg"
+  ],
+  "caption": "Day 30: transformers, the architecture that made LLMs possible.\n\nDid you know what the T in GPT meant before today?\n\n#AI101 #Transformer #DeepLearning #LLM #LearnAI #TechExplained"
+}
