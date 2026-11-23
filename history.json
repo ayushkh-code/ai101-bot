@@ -208,5 +208,11 @@
     "term": "RLHF",
     "media_id": "17958362184037178",
     "posted_at": "2026-11-22T10:11:18Z"
+  },
+  {
+    "id": "chain-of-thought",
+    "term": "Chain of thought",
+    "media_id": "17959142514278837",
+    "posted_at": "2026-11-23T11:09:06Z"
   }
 ]
